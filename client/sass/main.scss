@@ -1,0 +1,127 @@
+.container {
+  margin-top: 30px;
+  display: flex;
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    width: 30%;
+    height: 700px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: lavender;
+  }
+  
+  &__left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    width: 30%;
+    height: 700px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: lavender;
+  }
+}
+
+.bgc-red {
+  background-color: red;
+}
+
+.bgc-green {
+  background-color: green;
+}
+
+.rect {
+  position: relative;
+  font-size: 30px;
+  color: white;
+  width: 65%;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.queue {
+  background-color: blue;
+}
+
+.atm {
+  .atm-info {
+    margin-top: 70px;
+    padding: 0;
+    li {
+      font-size: 13px;
+      color: black;
+      list-style: none;
+    }
+  }
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 25px;
+  width: 65%;
+  background-color: darkslateblue;
+  font: inherit;
+  font-size: 25px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rebeccapurple;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 5px;
+    background-color: #333;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rebeccapurple;
+  padding: 10px;
+
+  label {
+    font-size: 25px;
+    margin-right: 20px;
+  }
+}
